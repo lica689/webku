@@ -1,34 +1,261 @@
-body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #fff0f5; color: #333; }
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweetella Bakery - Kue Manis untuk Setiap Momen</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }body {
+  background: #fff0f5;
+  color: #333;
+  scroll-behavior: smooth;
+}
 
-nav { background-color: #ff69b4; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; color: white; }
+nav {
+  background-color: #ffc0cb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 
-nav .logo { font-size: 1.5rem; font-weight: bold; }
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  animation: slideIn 1s ease-out;
+}
 
-nav ul { list-style: none; display: flex; gap: 1.5rem; }
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
 
-nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
 
-.hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to right, #ffe4e1, #ffc0cb); }
+nav ul li a:hover {
+  color: #ff69b4;
+}
 
-.hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+.hero {
+  background: url('https://images.unsplash.com/photo-1589308078051-d99c614b2d8d?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 6em 2em;
+  animation: fadeIn 1.5s ease-in;
+}
 
-.hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
 
-.btn { background-color: #ff1493; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 5px; border: none; font-size: 1rem; cursor: pointer; }
+.hero p {
+  font-size: 1.2em;
+}
 
-section { padding: 2rem; text-align: center; }
+section {
+  padding: 4em 2em;
+  max-width: 1000px;
+  margin: auto;
+  animation: fadeInUp 1s ease forwards;
+}
 
-.features { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 1rem; }
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
 
-.feature-box { background-color: #fff; padding: 1rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); width: 200px; }
+.feature-box {
+  background: #fff;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 250px;
+  transition: transform 0.3s;
+}
 
-.video-container iframe, .map-container iframe { max-width: 90%; width: 600px; height: 315px; border: none; border-radius: 10px; }
+.feature-box:hover {
+  transform: scale(1.05);
+}
 
-form.login-form { max-width: 400px; margin: 2rem auto; background-color: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); }
+blockquote {
+  font-style: italic;
+  background: #fff0f5;
+  padding: 1.5em;
+  border-left: 5px solid #ff69b4;
+  margin: 2em 0;
+}
 
-.login-form label { display: block; margin-bottom: 0.5rem; text-align: left; }
+footer {
+  text-align: center;
+  padding: 2em;
+  background-color: #ffc0cb;
+  color: white;
+  margin-top: 3em;
+}
 
-.login-form input { width: 100%; padding: 10px; margin-bottom: 1.5rem; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; }
+iframe {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  margin-top: 1em;
+}
 
-footer { background-color: #ff69b4; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+@keyframes slideIn {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Sweetella</div>
+    <ul>
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#lokasi">Lokasi</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>  <section id="beranda" class="hero">
+    <h1>Selamat Datang di Sweetella Bakery</h1>
+    <p>Kue imut dan lezat untuk setiap hari istimewamu</p>
+  </section>  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>Sweetella Bakery menghadirkan kue handmade dengan bahan premium, rasa yang menggoda, dan tampilan yang menggemaskan. Dibuat dengan cinta sejak 2010.</p>
+  </section>  <section id="menu">
+    <h2>Menu Kue Kami</h2>
+    <div class="features">
+      <div class="feature-box">
+        <h3>Strawberry Shortcake</h3>
+        <img src="https://source.unsplash.com/250x150/?strawberry-cake" alt="Strawberry Shortcake">
+        <p>Lembutnya sponge cake dengan krim dan stroberi segar.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Red Velvet Cupcake</h3>
+        <img src="https://source.unsplash.com/250x150/?cupcake" alt="Red Velvet Cupcake">
+        <p>Balutan cream cheese frosting yang creamy dan manis.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Rainbow Cake</h3>
+        <img src="https://source.unsplash.com/250x150/?rainbow-cake" alt="Rainbow Cake">
+        <p>Warna-warni ceria dengan rasa vanilla lembut.</p>
+      </div>
+    </div>
+  </section>  <section id="video">
+    <h2>Video Sweetella</h2>
+    <iframe height="315" src="https://www.youtube.com/embed/DXJO3AraeZs" title="YouTube video player" allowfullscreen></iframe>
+  </section>  <section id="lokasi">
+    <h2>Temukan Kami</h2>
+    <iframe height="300" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.973992663424!2d106.82720053657282!3d-6.1753922657595475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5c3e3b1607d%3A0x401e8f1fc28c9d0!2sMonumen%20Nasional!5e0!3m2!1sid!2sid!4v1715661712301"></iframe>
+  </section>  <footer>
+    <p>&copy; 2025 Sweetella Bakery | Cinta dari dapur untukmu</p>
+  </footer>
+</body>
+</html>
+
+/* Login Page */
+.login-body {
+  background: linear-gradient(to right, #ffcce6, #ffe6f2);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
+  width: 90%;
+  max-width: 400px;
+  animation: slideIn 0.6s ease-in-out;
+}
+
+.login-container h2 {
+  color: #d63384;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-container label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #555;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ffb6c1;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.login-container input:focus {
+  border-color: #d63384;
+  box-shadow: 0 0 5px rgba(214, 51, 132, 0.5);
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #d63384;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+.login-container button:hover {
+  background-color: #b52e70;
+}
+
+.back-link {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: #d63384;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
