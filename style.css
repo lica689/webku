@@ -1,31 +1,29 @@
+/* General Style */
 body {
-  font-family: 'Arial', sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
   background-color: #fff0f5;
   color: #333;
 }
 
 nav {
   background-color: #ff69b4;
-  padding: 1em 2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
 }
 
 nav .logo {
-  font-size: 1.5em;
   font-weight: bold;
   color: white;
+  font-size: 24px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1em;
-  margin: 0;
-  padding: 0;
+  gap: 15px;
 }
 
 nav ul li a {
@@ -36,61 +34,89 @@ nav ul li a {
 
 .hero {
   text-align: center;
-  padding: 4em 2em;
-  background: linear-gradient(to right, #ffb6c1, #ffe4e1);
+  padding: 80px 20px;
+  background-color: #ffc0cb;
+  color: #fff;
 }
 
-.hero h1 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
-}
-
-.hero p {
-  font-size: 1.2em;
-  margin-bottom: 1em;
-}
-
-.btn {
-  background-color: #ff1493;
+.hero .btn {
+  padding: 10px 20px;
+  background-color: #ff69b4;
   color: white;
-  padding: 0.75em 1.5em;
   text-decoration: none;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 section {
-  padding: 2em;
+  padding: 40px 20px;
   text-align: center;
 }
 
 .features {
   display: flex;
   justify-content: center;
-  gap: 1em;
-  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .feature-box {
-  background-color: #ffe4f0;
-  padding: 1em;
+  background-color: #ffe4e1;
+  padding: 20px;
   border-radius: 10px;
-  width: 250px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 200px;
 }
 
-blockquote {
-  font-style: italic;
-  background-color: #fff0f5;
-  padding: 1em;
-  border-left: 5px solid #ff69b4;
-  margin: 2em auto;
-  width: 60%;
+.video-container iframe,
+.map-container iframe {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
 footer {
-  text-align: center;
   background-color: #ff69b4;
   color: white;
-  padding: 1em;
-  margin-top: 2em;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* Login Page Style */
+.login-page {
+  background-color: #fff0f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: #ffe4e1;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.login-container input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.login-container button {
+  padding: 10px 20px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.back-link {
+  display: block;
+  margin-top: 20px;
+  color: #ff69b4;
+  text-decoration: none;
 }
