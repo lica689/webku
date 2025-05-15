@@ -1,34 +1,26 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login - Sweetella</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <nav>
-    <div class="logo">Sweetella</div>
-    <ul>
-      <li><a href="index.html">Beranda</a></li>
-    </ul>
-  </nav>
+<body class="login-body">
 
-  <section class="hero">
-    <h1>Login ke Sweetella</h1>
-    <form action="index.html" method="GET" class="login-form">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Email kamu..." required />
+  <div class="login-container">
+    <h2>Login ke Sweetella</h2>
+    <form action="index.html" method="get">
+      <label for="username">Nama Pengguna</label>
+      <input type="text" id="username" name="username" required>
 
-      <label for="password">Kata Sandi:</label>
-      <input type="password" id="password" name="password" placeholder="Kata sandi..." required />
+      <label for="password">Kata Sandi</label>
+      <input type="password" id="password" name="password" required>
 
-      <button type="submit" class="btn">Login</button>
+      <button type="submit">Masuk</button>
     </form>
-  </section>
+    <a href="index.html" class="back-link">Kembali ke Beranda</a>
+  </div>
 
-  <footer>
-    <p>&copy; 2025 Sweetella Bakery | Cinta dari dapur untukmu</p>
-  </footer>
 </body>
 </html>
