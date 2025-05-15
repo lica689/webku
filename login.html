@@ -2,19 +2,31 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Login - Sweetella</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="login-page">
-  <div class="login-container">
-    <h2>Masuk ke Sweetella</h2>
-    <form action="index.html" method="get">
-      <input type="text" placeholder="Nama Pengguna" required />
-      <input type="password" placeholder="Kata Sandi" required />
-      <button type="submit">Login</button>
+<body>
+  <nav>
+    <div class="logo">Sweetella</div>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>Login ke Sweetella</h1>
+    <form action="index.html" method="GET" style="max-width: 400px; margin: auto; background-color: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 1rem;"><br />
+      <label for="password">Kata Sandi:</label><br />
+      <input type="password" id="password" name="password" required style="width: 100%; padding: 10px; margin-bottom: 1rem;"><br />
+      <button type="submit" class="btn">Login</button>
     </form>
-    <a href="index.html" class="back-link">Kembali ke Beranda</a>
-  </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sweetella Bakery | Cinta dari dapur untukmu</p>
+  </footer>
 </body>
 </html>
