@@ -5,41 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Login - Sweetella</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .login-container {
-      max-width: 400px;
-      margin: 4em auto;
-      padding: 2em;
-      background-color: #ffe4f0;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    input[type="text"], input[type="password"] {
-      width: 90%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    .btn-login {
-      background-color: #ff69b4;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 25px;
-      cursor: pointer;
-    }
-  </style>
 </head>
-<body>
+<body class="login-page">
   <div class="login-container">
-    <h2>Login ke Sweetella</h2>
-    <form onsubmit="event.preventDefault(); window.location.href='index.html';">
-      <input type="text" placeholder="Username" required /><br />
-      <input type="password" placeholder="Password" required /><br />
-      <button class="btn-login">Login</button>
+    <h2>Masuk ke Sweetella</h2>
+    <form action="index.html" method="get">
+      <input type="text" placeholder="Nama Pengguna" required />
+      <input type="password" placeholder="Kata Sandi" required />
+      <button type="submit">Login</button>
     </form>
+    <a href="index.html" class="back-link">Kembali ke Beranda</a>
   </div>
 </body>
 </html>
