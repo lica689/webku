@@ -14,7 +14,7 @@ nav ul li a { color: white; text-decoration: none; font-weight: bold; }
 
 .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
 
-.btn { background-color: #ff1493; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 5px; }
+.btn { background-color: #ff1493; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 5px; border: none; font-size: 1rem; cursor: pointer; }
 
 section { padding: 2rem; text-align: center; }
 
@@ -23,6 +23,12 @@ section { padding: 2rem; text-align: center; }
 .feature-box { background-color: #fff; padding: 1rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); width: 200px; }
 
 .video-container iframe, .map-container iframe { max-width: 90%; width: 600px; height: 315px; border: none; border-radius: 10px; }
+
+form.login-form { max-width: 400px; margin: 2rem auto; background-color: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); }
+
+.login-form label { display: block; margin-bottom: 0.5rem; text-align: left; }
+
+.login-form input { width: 100%; padding: 10px; margin-bottom: 1.5rem; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; }
 
 footer { background-color: #ff69b4; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
 
