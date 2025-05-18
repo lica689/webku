@@ -2,17 +2,68 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Login - CakeLicious</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .login-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #ffe4ec;
+      color: #d63384;
+    }
+
+    .login-box {
+      background-color: #fff0f5;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #ffb6c1;
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+      color: #d63384;
+    }
+
+    .login-box input {
+      padding: 10px;
+      margin: 10px 0;
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #ff69b4;
+    }
+
+    .login-box button {
+      padding: 10px;
+      background-color: #ff69b4;
+      border: none;
+      width: 100%;
+      font-weight: bold;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .login-box a {
+      display: block;
+      text-align: center;
+      margin-top: 15px;
+      color: #d63384;
+      text-decoration: none;
+    }
+  </style>
 </head>
-<body class="login-body">
+<body>
   <div class="login-container">
-    <h2>Login ke CakeLicious</h2>
-    <form action="index.html" method="get">
+    <form class="login-box" onsubmit="event.preventDefault(); window.location.href='index.html';">
+      <h2>Masuk CakeLicious</h2>
       <input type="text" placeholder="Nama Pengguna" required />
       <input type="password" placeholder="Kata Sandi" required />
-      <button type="submit">Masuk</button>
+      <button type="submit">Login</button>
+      <a href="index.html">← Kembali ke Beranda</a>
     </form>
   </div>
 </body>
